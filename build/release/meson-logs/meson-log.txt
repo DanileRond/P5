@@ -1,6 +1,6 @@
-Build started at 2019-12-09T18:45:40.582016
+Build started at 2019-12-09T19:14:13.473159
 Main binary: /usr/bin/python3
-Build Options: -Dprefix=/home/daniel/PAV -Dlibdir=lib -Dbuildtype=release
+Build Options: -Dprefix=/home/daniel/PAV -Dlibdir=lib -Dbuildtype=release -Dbackend=ninja
 Python system: Linux
 The Meson build system
 Version: 0.52.0
@@ -9,34 +9,8 @@ Build dir: /home/daniel/Documentos/P5pav/P5/build/release
 Build type: native build
 Project name: Práctica 5 de PAV - Síntesis musical polifónica
 Project version: v2.0
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.cc -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.exe
 C++ compiler for the build machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the build machine: GNU ld.bfd 2.30
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.cc -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/daniel/Documentos/P5pav/P5/build/release/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the host machine: GNU ld.bfd 2.30
 Build machine cpu family: x86_64
@@ -50,8 +24,8 @@ Configuring Doxyfile using configuration
 Build targets in project: 5
 Found ninja-1.8.2 at /usr/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpmg2h2enb
-Command line:  c++ /tmp/tmpmg2h2enb/testfile.cpp -o /tmp/tmpmg2h2enb/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++11 
+Working directory:  /tmp/tmp1fb0jlxx
+Command line:  c++ /tmp/tmp1fb0jlxx/testfile.cpp -o /tmp/tmp1fb0jlxx/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++11 
 
 Code:
  int i = static_cast<int>(0);
@@ -61,8 +35,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++11: YES
 Running compile:
-Working directory:  /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmp4drldqqi
-Command line:  c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmp4drldqqi/testfile.cpp -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmp4drldqqi/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpe6nnxs9w
+Command line:  c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpe6nnxs9w/testfile.cpp -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpe6nnxs9w/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
