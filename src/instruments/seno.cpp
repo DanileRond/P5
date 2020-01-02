@@ -7,7 +7,7 @@
 
 using namespace upc;
 using namespace std;
-long increment;
+
 Instrumentseno::Instrumentseno(const std::string &param) 
   : adsr(SamplingRate, param) {
   bActive = false;
@@ -35,16 +35,22 @@ Instrumentseno::Instrumentseno(const std::string &param)
 
 
 void Instrumentseno::command(long cmd, long note, long vel) {
-f0 = 440 * pow(2, (note - 69.)/12);
 
+f0 = 440*pow(2,(note - 69.)/12);
+fprintf(stdout,"f0-->%f\n",f0);
   if (cmd == 9) {		//'Key' pressed: attack begins
     bActive = true;
     adsr.start();
     index = 0;
-	increment = tbl.size() / (SamplingRate/f0);
+	phas = 0;
+//	increment = 10*(f0/(SamplingRate/tbl.size()));
+//	increment = 2 * M_PI * (f0/SamplingRate);
+	increment = ((f0 / SamplingRate) * tbl.size());
+//	increment = SamplingRate / (f0) ;
+	fprintf(stdout,"increment-->%d\n",increment);
+	fprintf(stdout,"tblsize-->%d\n",tbl.size());
 	A = vel / 127.;
-
-
+	phas = 0;
   }
   else if (cmd == 8) {	//'Key' released: sustain ends, release begins
     adsr.stop();
@@ -65,12 +71,14 @@ const vector<float> & Instrumentseno::synthesize() {
     return x;
 
   for (unsigned int i=0; i<x.size(); ++i) {
-  index += increment;
-  x[i] = A * tbl[round(index)];
 
-    if (index >= tbl.size()){
-        index =0;
-        }
+  //fprintf(stdout,"index--->%d\n",index); 
+// 	x[i] = A * sin(phas);
+	phas = phas + increment;
+	x[i] = A * tbl[phas];
+
+
+	 while(phas >= tbl.size()) phas = phas - tbl.size();
 
   }
   adsr(x); //apply envelope to x and update internal status of ADSR

@@ -12,10 +12,10 @@ namespace upc {
     unsigned int index;
 	float A;
     std::vector<float> tbl;
-    float f0, increment;
+    float f0, increment,phas;
   public:
     Instrumentseno(const std::string &param = "");
-    void command(long cmd, long note, long velocity=1000); 
+    void command(long cmd, long note, long velocity=100); 
     const std::vector<float> & synthesize();
     bool is_active() const {return bActive;} 
   };
