@@ -75,7 +75,7 @@ const vector<float> & Instrumentseno::synthesize() {
   //fprintf(stdout,"index--->%d\n",index); 
 // 	x[i] = A * sin(phas);
 	phas = phas + increment;
-	x[i] = A * tbl[phas];
+	x[i] = A * tbl[round(phas)];
 
 
 	 while(phas >= tbl.size()) phas = phas - tbl.size();

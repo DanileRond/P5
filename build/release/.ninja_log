@@ -82,3 +82,7 @@
 3	1778	1578002038	src/25a6634@@synth@exe/instruments_seno.cpp.o	49ac4be21456e40
 1778	2089	1578002038	src/synth	ef661b2fdcb24c51
 2089	2786	0	meson-install	1b1b027ff0fd2a11
+3	6	1575912347	src/midi2scores/midi2sco	774699b0f5b39253
+2	1752	1578002278	src/25a6634@@synth@exe/instruments_seno.cpp.o	49ac4be21456e40
+1752	2078	1578002278	src/synth	ef661b2fdcb24c51
+2078	2733	0	meson-install	1b1b027ff0fd2a11
