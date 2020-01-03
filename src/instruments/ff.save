@@ -1,0 +1,18 @@
+f0 = 440*pow(2,(note-69)/12);
+
+  if (cmd == 9) {               //'Key' pressed: attack begins
+  bActive = true;
+    adsr.start();
+    index = 0;
+increment = tbl.size() / (SamplingRate/f0);
+        A = vel / 127.; 
+
+
+
+index += increment;
+  x[i] = A * tbl[round(index)];
+
+    if (index >= tbl.size()-1){
+        index -= tbl.size()-1;
+        }
+

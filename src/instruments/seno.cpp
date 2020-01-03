@@ -75,8 +75,12 @@ const vector<float> & Instrumentseno::synthesize() {
   //fprintf(stdout,"index--->%d\n",index); 
 // 	x[i] = A * sin(phas);
 	phas = phas + increment;
-	x[i] = A * tbl[round(phas)];
 
+//	x[i] = A * tbl[round(phas)];
+
+
+//Amb interpolació
+x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/(floor(phas+1)-floor(phas));
 
 	 while(phas >= tbl.size()) phas = phas - tbl.size();
 
