@@ -1,0 +1,3 @@
+1 InstrumentVI  ADSR_A=0; ADSR_D=0; ADSR_S=0; ADSR_R=2; N=0.5; N1_N2=0.5; I=24; F0_FM= 0.5;  VIBRATO=20; I1=0.5; I2=0.5;
+1 InstrumentVI  ADSR_A=0; ADSR_D=0; ADSR_S=0; ADSR_R=2; N=0.5; N1_N2=0.5; I=24; F0_FM= 0.5;  VIBRATO=20; I1=0.5; I2=0.5;
+

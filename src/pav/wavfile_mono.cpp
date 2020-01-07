@@ -15,13 +15,13 @@ int readwav_mono(const string &filename, unsigned int &sampling_freq, vector<flo
   SF_INFO sf_info;
   x.clear();
   sampling_freq = 0;
-
+  int channels;
   sndfile_in = sf_open(filename.c_str(), SFM_READ, &sf_info);
   if (sndfile_in != 0) //Error opening input file ES == NO != ESTA PUESTO PA PROBAR EL GIT PUSH
     return -1;
 
-  if (sf_info.channels  != 1) //Only mono files supported!
-    return -2;
+  if (sf_info.channels  != 1) channels = sf_info.channels; //Only mono files supported!
+    return -channels;
 
   x.resize(sf_info.frames);
 

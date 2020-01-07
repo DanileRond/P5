@@ -5,6 +5,8 @@ sources = [
 	'instruments/instrument_dumb.cpp',
 	'instruments/seno.cpp',
 	'instruments/chello.cpp',
+	'instruments/instrument_FM.cpp',
+	'instruments/instrumentVI.cpp',
 	'synth/envelope_adsr.cpp',
 	'synth/midi_score.cpp',
 	'synth/multinote_instr.cpp',

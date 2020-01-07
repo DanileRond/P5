@@ -3,6 +3,9 @@
 #include "seno.h"
 #include "chello.h"
 #include "keyvalue.h"
+#include "instrument_FM.h"
+#include "instrumentVI.h"
+#include "envelope_adsr.h"
 /*
   For each new instrument:
   - Add the header in this file
@@ -16,7 +19,6 @@ namespace upc {
   Instrument * get_instrument(const string &name,
  			      const string &parameters) {
     Instrument * pInst = 0;
-    KeyValue("nombre_del_fichero=cellomono.wav");
     //    cout << name << ": " << parameters << endl;
     if (name == "InstrumentDumb") {
       pInst = (Instrument *) new InstrumentDumb(parameters);
@@ -25,8 +27,14 @@ namespace upc {
 	pInst = (Instrument *) new Instrumentseno(parameters);
     }
     else if (name == "Instrumentchello"){
-//	parameters = "nombre_del_fichero=cellomono.wav";
-	pInst = (Instrument *) new Instrumentchello("nombre_del_fichero=cellomono.wav");
+	pInst = (Instrument *) new Instrumentchello(parameters);
+    }
+    else if (name == "InstrumentFM"){
+	
+	pInst = (Instrument *) new InstrumentFM(parameters);
+    }
+    else if (name == "InstrumentVI"){
+	pInst = (Instrument *) new InstrumentVI(parameters);
     }
     return pInst;
   }
