@@ -174,9 +174,9 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
   *literatura*).
 ### DO RE sin effects
 <img src="img/doreok.png" width="640" align="center">
-### DO RE MI ... con efecto de tremolo
+### DO RE con efecto de tremolo
 <img src="img/tremolo.png" width="640" align="center">
-### DO RE MI ... con efecto de vibrato
+### DO RE con efecto de vibrato
 <img src="img/vibrato.png" width="640" align="center">
 
 	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si
@@ -199,6 +199,8 @@ en semitonos.
 
 - Use el instrumento para generar un vibrato de *parámetros razonables* e incluya una gráfica en la que se vea,
   claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
+
+
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
   N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas diatónicas (fichero
   `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.work`.
