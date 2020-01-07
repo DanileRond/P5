@@ -27,17 +27,26 @@ visualizar el funcionamiento de la curva ADSR.
 
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus parámetros:
   ataque (A), caída (D), mantenimiento (S) y liberación (R).
+
+<p>Para los siguientes parametros obtenemos, mediante el instrumento SENO que 
+desarrollamos:
+0.1 0.1 0.3 0.1
+</p>
+<img src="img/A1.png" width="640" align="center">
+
 * Un instrumento *percusivo*, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
   mantenimiemto y el sonido se apague lentamente.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
     * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
+<img src="img/daniperc.png" width="640" align="center">
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución rápida del
       sonido hasta su finalización.
+<img src="img/perc2.png" width="640" align="center">
   - Debera representar en esta memoria **ambos** posibles finales de la nota.
 * Un instrumento *plano*, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En ellos, el
   ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también
   es bastante rápida.
-
+<img src="img/cordeta.png" width="640" align="center">
 Para los cuatro casos, deberá incluir una gráfica en la que se visualice claramente la curva ADSR. Deberá añadir la
 información necesaria para su correcta interpretación, aunque esa información puede reducirse a colocar etiquetas y
 títulos adecuados en la propia gráfica (se valorará positivamente esta alternativa).
@@ -53,7 +62,6 @@ búsqueda de los valores en una tabla.
 #include <math.h>
 #include "seno.h"
 #include "keyvalue.h"
-
 #include <stdlib.h>
 
 using namespace upc;
@@ -172,11 +180,14 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   *literatura*).
-### DO RE sin effects
+ DO RE sin effects
+============================
 <img src="img/doreok.png" width="640" align="center">
-### DO RE con efecto de tremolo
+DO RE con efecto de tremolo
+=============================
 <img src="img/tremolo.png" width="640" align="center">
-### DO RE con efecto de vibrato
+DO RE con efecto de vibrato
+=============================
 <img src="img/vibrato.png" width="640" align="center">
 
 	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si

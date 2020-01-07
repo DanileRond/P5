@@ -36,13 +36,13 @@
   },
   {
     "directory": "/home/daniel/Documentos/P5pav/P5/build/release",
-    "command": "c++ -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -MD -MQ 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o' -MF 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o.d' -o 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o' -c ../../src/instruments/instrument_FM.cpp",
-    "file": "../../src/instruments/instrument_FM.cpp"
+    "command": "c++ -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -MD -MQ 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o' -MF 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o.d' -o 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o' -c ../../src/instruments/instrumentVI.cpp",
+    "file": "../../src/instruments/instrumentVI.cpp"
   },
   {
     "directory": "/home/daniel/Documentos/P5pav/P5/build/release",
-    "command": "c++ -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -MD -MQ 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o' -MF 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o.d' -o 'src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o' -c ../../src/instruments/instrumentVI.cpp",
-    "file": "../../src/instruments/instrumentVI.cpp"
+    "command": "c++ -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -MD -MQ 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o' -MF 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o.d' -o 'src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o' -c ../../src/instruments/instrument_FM.cpp",
+    "file": "../../src/instruments/instrument_FM.cpp"
   },
   {
     "directory": "/home/daniel/Documentos/P5pav/P5/build/release",

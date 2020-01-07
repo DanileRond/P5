@@ -5,7 +5,6 @@
 
 #include <stdlib.h>
 
-#define FREF 440.
 
 using namespace upc;
 using namespace std;
@@ -47,7 +46,7 @@ void InstrumentVI::command(long cmd, long note, long vel) {
     adsr.start();
     index = 0;
 
-	float f0 = FREF * pow(2, (note - 69.)/12.);
+	float f0 = 440 * pow(2, (note - 69.)/12.);
 	alpha = 2.0F * M_PI * f0 / SamplingRate; /* fc = f0 * N */
 	beta = 2.0F * M_PI * fm / SamplingRate;
 //
@@ -55,6 +54,8 @@ void InstrumentVI::command(long cmd, long note, long vel) {
 	I = I_f / f0;
 
 	A =  vel / 127.;
+	phaseM = 0;
+	phaseC = 0;
   } else if (cmd == 8) {
     adsr.stop();
   }
