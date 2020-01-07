@@ -1,4 +1,4 @@
-Build started at 2020-01-03T21:34:30.302670
+Build started at 2020-01-07T15:35:48.215453
 Main binary: /usr/bin/python3
 Build Options: -Dprefix=/home/daniel/PAV -Dlibdir=lib -Dbuildtype=release -Dbackend=ninja
 Python system: Linux
@@ -24,8 +24,8 @@ Configuring Doxyfile using configuration
 Build targets in project: 5
 Found ninja-1.8.2 at /usr/bin/ninja
 Running compile:
-Working directory:  /tmp/tmp_7qoxtvo
-Command line:  c++ /tmp/tmp_7qoxtvo/testfile.cpp -o /tmp/tmp_7qoxtvo/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++11 
+Working directory:  /tmp/tmpq_jl7szt
+Command line:  c++ /tmp/tmpq_jl7szt/testfile.cpp -o /tmp/tmpq_jl7szt/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++11 
 
 Code:
  int i = static_cast<int>(0);
@@ -35,8 +35,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++11: YES
 Running compile:
-Working directory:  /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpofpql36t
-Command line:  c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpofpql36t/testfile.cpp -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpofpql36t/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpafhjyigy
+Command line:  c++ /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpafhjyigy/testfile.cpp -o /home/daniel/Documentos/P5pav/P5/build/release/meson-private/tmpafhjyigy/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  

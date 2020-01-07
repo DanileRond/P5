@@ -28,6 +28,7 @@ unsigned int fm;
 
 if (readwav_mono(file_name,fm,tbl) < 0) {
 cerr << "Error: no se puede leer el fichero " << file_name << " para un instrumento FicTabla" << endl;
+fprintf(stdout,"returned value ---> %d\n",readwav_mono(file_name,fm,tbl));
 throw -1;
 }
 

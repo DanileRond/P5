@@ -19,6 +19,7 @@ Instrumentseno::Instrumentseno(const std::string &param)
   */
   KeyValue kv(param);
   int N;
+FILE * f = fopen("tblfile.log","a");
 
   if (!kv.to_int("N",N))
     N = 40; //default value
@@ -28,9 +29,11 @@ Instrumentseno::Instrumentseno(const std::string &param)
   float phase = 0, step = 2 * M_PI /(float) N;
   index = 0;
   for (int i=0; i < N ; ++i) {
-    tbl[i] = sin(phase);
+    tbl[i] = sin(phase);;
+    fprintf(f,"%f\n",tbl[i]);
     phase += step;
   }
+fclose(f);
 }
 
 
@@ -69,7 +72,8 @@ const vector<float> & Instrumentseno::synthesize() {
   }
   else if (not bActive)
     return x;
-
+FILE * fp;
+fp = fopen("xvector.log","a");
   for (unsigned int i=0; i<x.size(); ++i) {
 
   //fprintf(stdout,"index--->%d\n",index); 
@@ -82,10 +86,11 @@ const vector<float> & Instrumentseno::synthesize() {
 //Amb interpolació
 x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/(floor(phas+1)-floor(phas));
 
+fprintf(fp,"%f\n",x[i]);
 	 while(phas >= tbl.size()) phas = phas - tbl.size();
 
   }
   adsr(x); //apply envelope to x and update internal status of ADSR
-
+fclose(fp);
   return x;
 }
