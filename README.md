@@ -148,15 +148,23 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 - Explique qué método se ha seguido para asignar un valor a la señal a partir de los contenidos en la tabla, e incluya
   una gráfica en la que se vean claramente (use pelotitas en lugar de líneas) los valores de la tabla y los de la
   señal generada.
-	<p> -Tal y como indica el enunciado podemos obtener la frecuencia fundamental a partir de la expresión:`f0 = 440*pow(2,(note - 69.)/12)` 
+	* -Tal y como indica el enunciado podemos obtener la frecuencia fundamental a partir de la expresión:`f0 = 440*pow(2,(note - 69.)/12)` 
 	Por otro lado, la tabla que generamos a partir del seno de una fase determinada se puede recorrer a diferente velocidad. Esto 
 	permite modificar la frecuencia del seno y obtener así la fase deseada en función de la frecuencia fundamental.
 	La expresión que cumple con esta explicación es `(f0 / SamplingRate) * tbl.size()`
+	
+	<p>
+		D'aqui obtenim el resultat gràfic on observem el mostrejat (amb interpolació) obtingut de la senyal x sobre el recorregut de
+		la taula tbl
+		 <img src="img/Figure_1.png" width="640" align="center">
+	</p> 
 
-    	</p>
+
+	
 
 - Si ha implementado la síntesis por tabla almacenada en fichero externo, incluya a continuación el código del método
   `command()`.
+			*_Problemas para la lectura del fichero wav._
 
 ### Efectos sonoros.
 
@@ -164,6 +172,20 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   *literatura*).
+### DO RE sin effects
+<img src="img/doreok.png" width="640" align="center">
+### DO RE MI ... con efecto de tremolo
+<img src="img/tremolo.png" width="640" align="center">
+### DO RE MI ... con efecto de vibrato
+<img src="img/vibrato.png" width="640" align="center">
+
+	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si
+	se ve afectada por estos. En el primer caso (*TREMOLO*) vemos fàcilmente, de manera independiente al ataque o caída,
+	una variación considerable de la amplitud de la senyal.
+
+	*En el caso del *vibrato* (3a imagen) podemos apreciar igualmente la variación, estiramiento y contracción, de la frecuencia.
+	A diferencia de la representación sin efectos, esto produce subidas y bajadas de tono alrededor de la nota en cuestión.
+
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué resultado ha
   producido. Incluya, en el directorio `work/ejemplos`, los ficheros necesarios para apreciar el efecto, e indique,
   a continuación, la orden necesaria para generar los ficheros de audio usando el programa `synth`.
