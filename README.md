@@ -39,7 +39,7 @@ desarrollamos:
 
 =======
 0.1 0.1 0.3 0.1
->>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
+
 </p>
 <img src="img/A1.png" width="640" align="center">
 
@@ -259,7 +259,6 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 - Coloque el resultado, junto con los ficheros necesarios para generarlo, en el directorio `work/music`.
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos necesarios
   están en direcotorio indicado).
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 synth dumb.orc ../samples/ToyStory_A_Friend_in_me.sco ToyStory_A_Friend_in_me.wav
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
