@@ -30,12 +30,16 @@ visualizar el funcionamiento de la curva ADSR.
 
 <p>Para los siguientes parametros obtenemos, mediante el instrumento SENO que 
 desarrollamos:
+<<<<<<< HEAD
 
   |                        | A    | D     | S    |   R  |
   |------------------------|:----:|:----:|:----:|:-----:|
   | &rho;<sub>value</sub>[2,3] | 0.1   |  0.1 | 0.3  |  0.1  |
   
 
+=======
+0.1 0.1 0.3 0.1
+>>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 </p>
 <img src="img/A1.png" width="640" align="center">
 
@@ -138,7 +142,11 @@ const vector<float> & Instrumentseno::synthesize() {
     return x;
   for (unsigned int i=0; i<x.size(); ++i) {
 
+<<<<<<< HEAD
 //      x[i] = A * sin(phas);
+=======
+// 	x[i] = A * sin(phas);
+>>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 	phas = phas + increment;
 
 //	x[i] = A * tbl[round(phas)];
@@ -167,9 +175,15 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 	La expresión que cumple con esta explicación es `(f0 / SamplingRate) * tbl.size()`
 	
 	<p>
+<<<<<<< HEAD
 		De aquí obtenemos el resultado gráfico donde observamos el mostreado (con interpolación) y lo obtenido de 
 		recorrer la tabla del seno.
 		<img src="img/Figure_1.png" width="640" align="center">
+=======
+		D'aqui obtenim el resultat gràfic on observem el mostrejat (amb interpolació) obtingut de la senyal x sobre el recorregut de
+		la taula tbl
+		 <img src="img/Figure_1.png" width="640" align="center">
+>>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 	</p> 
 
 
@@ -185,6 +199,7 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   *literatura*).
+<<<<<<< HEAD
 ### DO RE sin effects
 ----------------------------
 <img src="img/doreok.png" width="640" align="center">
@@ -193,6 +208,16 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 <img src="img/tremolo.png" width="640" align="center">
 ###DO RE con efecto de vibrato
 -------------------------
+=======
+ DO RE sin effects
+============================
+<img src="img/doreok.png" width="640" align="center">
+DO RE con efecto de tremolo
+=============================
+<img src="img/tremolo.png" width="640" align="center">
+DO RE con efecto de vibrato
+=============================
+>>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 <img src="img/vibrato.png" width="640" align="center">
 
 	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si
@@ -234,11 +259,14 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 - Coloque el resultado, junto con los ficheros necesarios para generarlo, en el directorio `work/music`.
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos necesarios
   están en direcotorio indicado).
+<<<<<<< HEAD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 synth dumb.orc ../samples/ToyStory_A_Friend_in_me.sco ToyStory_A_Friend_in_me.wav
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
 
 <p> O como dice el enunciado, señalando el directorio correspondiente en cada fichero de input o output</p>
+=======
+>>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 
 También puede orquestar otros temas más complejos, como la banda sonora de *Hawaii5-0* o el villacinco de John
 Lennon *Happy Xmas (War Is Over)* (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción de su agrado
