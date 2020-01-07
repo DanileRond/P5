@@ -71,12 +71,12 @@ build src/25a6634@@synth@exe/instruments_chello.cpp.o: cpp_COMPILER ../../src/in
  DEPFILE = src/25a6634@@synth@exe/instruments_chello.cpp.o.d
  ARGS = -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3
 
-build src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o: cpp_COMPILER ../../src/instruments/instrument_FM.cpp
- DEPFILE = src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o.d
- ARGS = -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3
-
 build src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o: cpp_COMPILER ../../src/instruments/instrumentVI.cpp
  DEPFILE = src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o.d
+ ARGS = -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3
+
+build src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o: cpp_COMPILER ../../src/instruments/instrument_FM.cpp
+ DEPFILE = src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o.d
  ARGS = -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3
 
 build src/25a6634@@synth@exe/synth_envelope_adsr.cpp.o: cpp_COMPILER ../../src/synth/envelope_adsr.cpp
@@ -111,7 +111,7 @@ build src/25a6634@@synth@exe/effects_vibrato.cpp.o: cpp_COMPILER ../../src/effec
  DEPFILE = src/25a6634@@synth@exe/effects_vibrato.cpp.o.d
  ARGS = -Isrc/25a6634@@synth@exe -Isrc -I../../src -I../../src/include -I../../src/synth -I../../src/instruments -I../../src/pav/docopt_cpp -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3
 
-build src/synth: cpp_LINKER src/25a6634@@synth@exe/instruments_instrument.cpp.o src/25a6634@@synth@exe/instruments_instrument_dumb.cpp.o src/25a6634@@synth@exe/instruments_seno.cpp.o src/25a6634@@synth@exe/instruments_chello.cpp.o src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o src/25a6634@@synth@exe/synth_envelope_adsr.cpp.o src/25a6634@@synth@exe/synth_midi_score.cpp.o src/25a6634@@synth@exe/synth_multinote_instr.cpp.o src/25a6634@@synth@exe/synth_orchest.cpp.o src/25a6634@@synth@exe/synth_synthesizer.cpp.o src/25a6634@@synth@exe/effects_effect.cpp.o src/25a6634@@synth@exe/effects_tremolo.cpp.o src/25a6634@@synth@exe/effects_vibrato.cpp.o | /usr/lib/x86_64-linux-gnu/libm.a /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libsndfile.a /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.28 src/pav/libpav.a
+build src/synth: cpp_LINKER src/25a6634@@synth@exe/instruments_instrument.cpp.o src/25a6634@@synth@exe/instruments_instrument_dumb.cpp.o src/25a6634@@synth@exe/instruments_seno.cpp.o src/25a6634@@synth@exe/instruments_chello.cpp.o src/25a6634@@synth@exe/instruments_instrumentVI.cpp.o src/25a6634@@synth@exe/instruments_instrument_FM.cpp.o src/25a6634@@synth@exe/synth_envelope_adsr.cpp.o src/25a6634@@synth@exe/synth_midi_score.cpp.o src/25a6634@@synth@exe/synth_multinote_instr.cpp.o src/25a6634@@synth@exe/synth_orchest.cpp.o src/25a6634@@synth@exe/synth_synthesizer.cpp.o src/25a6634@@synth@exe/effects_effect.cpp.o src/25a6634@@synth@exe/effects_tremolo.cpp.o src/25a6634@@synth@exe/effects_vibrato.cpp.o | /usr/lib/x86_64-linux-gnu/libm.a /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libsndfile.a /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.28 src/pav/libpav.a
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,--start-group src/pav/libpav.a -lm -lsndfile -Wl,--end-group '-Wl,-rpath,$$ORIGIN/pav' -Wl,-rpath-link,/home/daniel/Documentos/P5pav/P5/build/release/src/pav
 
 build src/midi2scores/e3a398d@@midi2skini@exe/src_midi2skini.cpp.o: cpp_COMPILER ../../src/midi2scores/src/midi2skini.cpp

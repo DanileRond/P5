@@ -30,7 +30,6 @@ namespace upc {
 	pInst = (Instrument *) new Instrumentchello(parameters);
     }
     else if (name == "InstrumentFM"){
-	
 	pInst = (Instrument *) new InstrumentFM(parameters);
     }
     else if (name == "InstrumentVI"){
