@@ -40,7 +40,7 @@ fclose(f);
 void Instrumentseno::command(long cmd, long note, long vel) {
 
 f0 = 440*pow(2,(note - 69.)/12);
-fprintf(stdout,"f0-->%f\n",f0);
+//fprintf(stdout,"f0-->%f\n",f0);
   if (cmd == 9) {		//'Key' pressed: attack begins
     bActive = true;
     adsr.start();
@@ -50,8 +50,8 @@ fprintf(stdout,"f0-->%f\n",f0);
 //	increment = 2 * M_PI * (f0/SamplingRate);
 	increment = ((f0 / SamplingRate) * tbl.size());
 //	increment = SamplingRate / (f0) ;
-	fprintf(stdout,"increment-->%d\n",increment);
-	fprintf(stdout,"tblsize-->%d\n",tbl.size());
+//	fprintf(stdout,"increment-->%d\n",increment);
+//	fprintf(stdout,"tblsize-->%d\n",tbl.size());
 	A = vel / 127.;
 	phas = 0;
   }
@@ -80,11 +80,11 @@ fp = fopen("xvector.log","a");
 // 	x[i] = A * sin(phas);
 	phas = phas + increment;
 
-//	x[i] = A * tbl[round(phas)];
+	x[i] = A * tbl[round(phas)];
 
 
 //Amb interpolació
-x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/(floor(phas+1)-floor(phas));
+//x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/(floor(phas+1)-floor(phas));
 
 fprintf(fp,"%f\n",x[i]);
 	 while(phas >= tbl.size()) phas = phas - tbl.size();
