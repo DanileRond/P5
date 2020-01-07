@@ -34,7 +34,7 @@ desarrollamos:
 
   |                        | A    | D     | S    |   R  |
   |------------------------|:----:|:----:|:----:|:-----:|
-  | &rho;<sub>value</sub>[2,3] | 0.1   |  0.1 | 0.3  |  0.1  |
+  | &;<sub>value</sub> | 0.1   |  0.1 | 0.3  |  0.1  |
   
 
 =======
@@ -217,7 +217,7 @@ DO RE con efecto de tremolo
 <img src="img/tremolo.png" width="640" align="center">
 DO RE con efecto de vibrato
 =============================
->>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
+
 <img src="img/vibrato.png" width="640" align="center">
 
 	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si
@@ -259,14 +259,12 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 - Coloque el resultado, junto con los ficheros necesarios para generarlo, en el directorio `work/music`.
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos necesarios
   están en direcotorio indicado).
-<<<<<<< HEAD
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 synth dumb.orc ../samples/ToyStory_A_Friend_in_me.sco ToyStory_A_Friend_in_me.wav
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
 
 <p> O como dice el enunciado, señalando el directorio correspondiente en cada fichero de input o output</p>
-=======
->>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 
 También puede orquestar otros temas más complejos, como la banda sonora de *Hawaii5-0* o el villacinco de John
 Lennon *Happy Xmas (War Is Over)* (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción de su agrado
