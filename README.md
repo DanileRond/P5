@@ -208,16 +208,6 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 <img src="img/tremolo.png" width="640" align="center">
 ###DO RE con efecto de vibrato
 -------------------------
-=======
- DO RE sin effects
-============================
-<img src="img/doreok.png" width="640" align="center">
-DO RE con efecto de tremolo
-=============================
-<img src="img/tremolo.png" width="640" align="center">
-DO RE con efecto de vibrato
-=============================
-
 <img src="img/vibrato.png" width="640" align="center">
 
 	*En todos los 3 casos observamos una primera nota sin alteración a causa de los efectos seguida de una segunda nota (RE) que si
