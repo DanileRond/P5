@@ -30,7 +30,7 @@ visualizar el funcionamiento de la curva ADSR.
 
 <p>Para los siguientes parametros obtenemos, mediante el instrumento SENO que 
 desarrollamos:
-<<<<<<< HEAD
+
 
   |                        | A    | D     | S    |   R  |
   |------------------------|:----:|:----:|:----:|:-----:|
@@ -142,11 +142,11 @@ const vector<float> & Instrumentseno::synthesize() {
     return x;
   for (unsigned int i=0; i<x.size(); ++i) {
 
-<<<<<<< HEAD
+
 //      x[i] = A * sin(phas);
 =======
 // 	x[i] = A * sin(phas);
->>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
+
 	phas = phas + increment;
 
 //	x[i] = A * tbl[round(phas)];
@@ -175,7 +175,7 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 	La expresión que cumple con esta explicación es `(f0 / SamplingRate) * tbl.size()`
 	
 	<p>
-<<<<<<< HEAD
+
 		De aquí obtenemos el resultado gráfico donde observamos el mostreado (con interpolación) y lo obtenido de 
 		recorrer la tabla del seno.
 		<img src="img/Figure_1.png" width="640" align="center">
@@ -183,7 +183,6 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
 		D'aqui obtenim el resultat gràfic on observem el mostrejat (amb interpolació) obtingut de la senyal x sobre el recorregut de
 		la taula tbl
 		 <img src="img/Figure_1.png" width="640" align="center">
->>>>>>> 43dc0cc0d6b5074977ed12ae7657268d5a90d479
 	</p> 
 
 
@@ -199,7 +198,7 @@ x[i] =tbl[floor(phas)]+(phas-floor(phas))*(tbl[floor(phas+1)]-tbl[floor(phas)])/
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   *literatura*).
-<<<<<<< HEAD
+
 ### DO RE sin effects
 ----------------------------
 <img src="img/doreok.png" width="640" align="center">
