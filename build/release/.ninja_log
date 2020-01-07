@@ -71,3 +71,5 @@
 4	1683	1578436625	src/25a6634@@synth@exe/instruments_seno.cpp.o	49ac4be21456e40
 1683	2006	1578436625	src/synth	c6ff52bcf45c366c
 2006	2620	0	meson-install	1b1b027ff0fd2a11
+61	109	1575912347	src/midi2scores/midi2sco	774699b0f5b39253
+109	2158	0	meson-install	1b1b027ff0fd2a11
